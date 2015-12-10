@@ -1,0 +1,25 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.br.marcio.campos.pastel4you.InicialApp"
+    android:background="@drawable/back_gradient"
+    android:clickable="true"
+     android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_paste4you"
+        ></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pastel 4 You"
+        android:gravity="center"
+        android:textSize="@dimen/abc_action_button_min_width_overflow_material"
+        android:layout_margin="10dp"/>
+
+
+</LinearLayout>

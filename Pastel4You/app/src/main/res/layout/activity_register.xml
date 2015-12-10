@@ -1,0 +1,140 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        >
+
+        <include layout="@layout/include_toolbar" />
+
+
+        <EditText
+            android:paddingTop="50dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editNome"
+            android:hint="Nome"
+            />
+
+        <EditText
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editPassoword"
+            android:hint="Senha"/>
+
+
+        <EditText
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editPassowordConfirm"
+            android:hint="Confirmar Senha"/>
+
+        <EditText
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editEmail"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail"/>
+
+        <EditText
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editFone"
+            android:hint="Telefone"
+            android:inputType="text|phone"/>
+
+
+        <EditText
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editRua"
+            android:hint="Rua"/>
+        <EditText
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editBairro"
+
+            android:hint="Bairro"/>
+
+        <LinearLayout
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editNumero"
+                android:hint="Número"
+                android:layout_marginRight="60dp"
+                android:inputType="number"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editCEP"
+                android:inputType="number"
+                android:hint="CEP"/>
+        </LinearLayout>
+        
+        <Button
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_base"
+            android:text="Salvar"
+            android:textSize="17dp"
+            android:textColor="@color/white"
+            android:id="@+id/btnRegistrar"
+            android:layout_margin="25dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl2"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center_horizontal|center_vertical"
+
+            />
+
+    </FrameLayout>
+
+</FrameLayout>
